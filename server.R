@@ -120,7 +120,7 @@ shinyServer(function(input,output,session){
     filedata(input$fileI)
   })
   
-  gr <- reactiveValues(counter = 1, stopHelper = 0, planta = matrix(0,2,2), inseto = matrix(0,2,2), listaI = 0, listaP = 0)
+  gr <- reactiveValues(counter = 1, stopHelper = 0, planta = matrix(0,2,2), inseto = matrix(0,2,2), listaI = list(0,0,0), listaP = list(0,0,0))
   
   observe({
     if(gr$stopHelper==0){
